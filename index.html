@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Community Garden - Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <header id="heading">
+    <h1 id="title">Community Garden - Application Form</h1>
+   </header>
+   <main>
+    <p id="description">If you are interested in renting a plot at our community garden, please submit this application by the end of January. Each plot has an area of 64 sq ft.(8ft. by 8ft.), and the maximum number of plots that can be rented is 6. There are limited plots available, so those who have early submissions will have higher chances of securing a plot. We will review applications and get back to you in February, just in time for you to prepare your garden for spring!</p>
+    <form id="survey-form">
+      <fieldset id="user-info">
+        <label id="name-label" for="name">Full Name: <input type="text" id="name" name="name" placeholder="First and Last Name" required></label>
+        <br>
+        <br>
+        <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Enter Valid Email" required></label>
+        <br>
+        <br>
+        <label id="number-label" for="number">How many plots do you plan to rent? <input type="number" id="number" name="spots" min="1" max="6" placeholder="1-6"></label>
+     </fieldset>
+     <fieldset id="gardening-info">
+       <p>How long do you plan on renting the plot(s)?</p>
+       <label id="dropdown-label" for="dropdown">
+         <select id="dropdown" name="duration">
+           <option value="" id="blank">Select one</option>
+           <option value="six-months" id="six-months">< 6 months</option>
+           <option value="one-year" id="one-year">1 year</option>
+           <option value="two-years" id="two-years">2 years</option>
+           <option value="more-years" id="more-years">> 3 years</option>
+           <option value="undecided" id="undecided">Undecided</option>
+          </select>
+       </label>
+       <p id="distance-question"> How far away do you live from this garden?</p>
+       <label id="distance1-label" for="distance1"><input type="radio" name="distance" value="less-than-ten" id="distance1"> < 10 miles</label><br>
+       <label id="distance2-label" for="distance2"><input type="radio" name="distance" value="less-than-twenty-five" id="distance2"> 10 - 25 miles</label><br>
+       <label id="distance3-label" for="distance3"><input type="radio" name="distance" value="less-than-thirty-five" id="distance3"> 25 - 35 miles</label><br>
+       <label id="distance4-label" for="distance4"><input type="radio" name="distance" value="more-than-thirty-five" id="distance4"> > 35 miles</label> <br>
+       <p>What type of plants do you plan on including in your garden?</p>
+       <label id="vegetables-label" for="vegetables"><input type="checkbox" name="plant-type" id="vegetables" value="vegetables"> Vegetables</label><br>
+       <label id="flowers-label" for="flowers"><input type="checkbox" name="plant-type" id="flowers" value="flowers"> Flowers</label><br>
+       <label id="fruits-label" for="fruits"><input type="checkbox" name="plant-type" id="fruits" value="fruits"> Fruits</label><br>
+       <label id="herbs-spices-label" for="herbs-spices"><input type="checkbox" name="plant-type" id="herbs-spices" value="herbs-spices"> Herbs/Spices</label><br>
+       <label id="other-label" for="other"><input type="checkbox" name="plant-type" id="other" value="other"> Other</label>
+     </fieldset>
+     <fieldset id="additional info">
+       <label id="comments-label">If you have any additional questions or comments, please feel free to share them here: <br><textarea rows="5" cols="40" id="comments" placeholder="Questions or Comments..."></textarea></label>
+     </fieldset>
+     <button type="submit" id="submit">Submit</button>
+   </form>
+  </main>
+ </body>
+</html>

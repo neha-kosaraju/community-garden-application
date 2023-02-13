@@ -1,0 +1,21 @@
+body {
+    background-color: rgba(11, 156, 4, 0.3);
+  }
+  
+  fieldset {
+    border: 0;
+  }
+  
+  header {
+    background-color: rgba(11,156,4,0.4);
+  }
+  
+  #title {
+    color: black;
+    font-weight: bold;
+  }
+  
+  body {
+    text-align:center;
+    font-family: sans-serif;
+  }
